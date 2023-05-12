@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Table, Form } from 'react-bootstrap';
-import EmployeeForm from './EmployeeForm';
 
 export default function Home() {
   const [employees, setEmployees] = useState([]);
@@ -20,7 +19,7 @@ export default function Home() {
   return (
     <div>
       <Navbar bg="lighthttps://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png" expand="lg">
-        <Navbar.Brand href="#home">Employee List</Navbar.Brand>
+        <Navbar.Brand href="">Employee List</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">

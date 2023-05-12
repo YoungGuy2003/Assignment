@@ -31,11 +31,12 @@ export default function EmployeeForm({ setEmployees }) {
       .catch(error => console.log(error));
   }
 
+
   return (
     <div>
       <div className="container my-4">
         <h1>Employee Form</h1>
-        <Form onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit} className="employee-form">
           <Form.Group controlId="formId">
             <Form.Label>ID</Form.Label>
             <Form.Control type="text" placeholder="Enter ID" value={id} onChange={e => setId(e.target.value)} />
